@@ -1,0 +1,36 @@
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: nudge-emails
+  labels:
+    app.kubernetes.io/name: nudge-emails
+spec:
+  schedule: {{ NUDGE_SCHEDULE }}
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            app.kubernetes.io/name: nudge-emails
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: panorama-elt
+              image: {{ DOCKER_IMAGE_OPENEDX }}
+              volumeMounts:
+                - mountPath: /openedx/edx-platform/lms/envs/tutor/
+                  name: settings-lms
+                - mountPath: /openedx/config
+                  name: config
+              command:
+                - /bin/sh
+                - -c
+                - ./manage.py lms send_course_update {{ LMS_HOST }}; ./manage.py lms send_recurring_nudge {{ LMS_HOST }}
+          volumes:
+            - name: settings-lms
+              configMap:
+                name: openedx-settings-lms
+            - name: config
+              configMap:
+                name: openedx-config
