@@ -1,6 +1,6 @@
 # Change log
 
-## Unreleased
+## Version 15.0.0 (2023-10-17)
 - Olive: update dependency to Tutor 15
 
 ## Version 14.0.0 (2023-10-17)
