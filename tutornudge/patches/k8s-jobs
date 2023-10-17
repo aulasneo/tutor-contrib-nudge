@@ -16,7 +16,7 @@ spec:
         spec:
           restartPolicy: Never
           containers:
-            - name: panorama-elt
+            - name: nudge_and_updates
               image: {{ DOCKER_IMAGE_OPENEDX }}
               volumeMounts:
                 - mountPath: /openedx/edx-platform/lms/envs/tutor/
