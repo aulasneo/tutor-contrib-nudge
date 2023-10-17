@@ -1,5 +1,8 @@
 # Change log
 
+## Unreleased
+- Olive: update dependency to Tutor 15
+
 ## Version 14.0.0 (2023-10-17)
 - Nutmeg: update dependency to Tutor 14
 
