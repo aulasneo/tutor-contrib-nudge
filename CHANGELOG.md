@@ -1,6 +1,6 @@
 # Change log
 
-## Unreleased
+## Version 15.0.1 (2023-10-19)
 - Fix syntax error in README.txt
 
 ## Version 15.0.0 (2023-10-17)
