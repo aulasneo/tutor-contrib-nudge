@@ -1,5 +1,5 @@
-nudge plugin for `Tutor <https://docs.tutor.overhang.io>`__
-===================================================================================
+nudge plugin for `Tutor <https://docs.tutor.overhang.io>`_
+==========================================================
 
 Plugin to enable nudge and highlights emails.
 
@@ -16,11 +16,9 @@ Installation
 Configuration
 -------------
 
-* NUDGE_SCHEDULE: Set the schedule for the nudge emails. Default is "0 10 * * *" (everyday at 10am).
-
-* NUDGE_SEND_COURSE_UPDATE: Enable course updates. Default is True.
-
-* NUDGE_SEND_RECURRING_NUDGE: Enable recurring nudges. Default is True.
+- NUDGE_SCHEDULE: Set the schedule for the nudge emails. Default is "0 10 \* \* \*" (everyday at 10am).
+- NUDGE_SEND_COURSE_UPDATE: Enable course updates. Default is True.
+- NUDGE_SEND_RECURRING_NUDGE: Enable recurring nudges. Default is True.
 
 
 Usage
