@@ -1,5 +1,8 @@
 # Change log
 
+## Unreleased
+- Fix syntax error in README.txt
+
 ## Version 15.0.0 (2023-10-17)
 - Olive: update dependency to Tutor 15
 
