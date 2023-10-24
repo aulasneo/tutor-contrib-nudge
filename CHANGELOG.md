@@ -1,5 +1,8 @@
 # Change log
 
+## Unreleased
+- Fix error in image name
+
 ## Version 15.0.1 (2023-10-19)
 - Fix syntax error in README.txt
 
