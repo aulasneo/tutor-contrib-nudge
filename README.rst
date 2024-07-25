@@ -6,6 +6,8 @@ Plugin to enable nudge and highlights emails.
 It creates a CronJob in K8s based on the openedx docker image that calls
 the `send_course_update` and `send_recurring_nudge` management commands
 
+
+
 Installation
 ------------
 

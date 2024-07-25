@@ -1,3 +1,6 @@
+"""
+Setuptools project for tutor-contrib-nudge.
+"""
 import io
 import os
 from setuptools import setup, find_packages
@@ -6,11 +9,19 @@ HERE = os.path.abspath(os.path.dirname(__file__))
 
 
 def load_readme():
+    """
+    Load readme file.
+    :return:
+    """
     with io.open(os.path.join(HERE, "README.rst"), "rt", encoding="utf8") as f:
         return f.read()
 
 
 def load_about():
+    """
+    Load about file.
+    :return:
+    """
     about = {}
     with io.open(
         os.path.join(HERE, "tutornudge", "__about__.py"),
@@ -40,7 +51,7 @@ setup(
     packages=find_packages(exclude=["tests*"]),
     include_package_data=True,
     python_requires=">=3.7",
-    install_requires=["tutor >= 16.0.0, < 17.0.0"],
+    install_requires=["tutor >= 17.0.0, < 18.0.0"],
     entry_points={
         "tutor.plugin.v1": [
             "nudge = tutornudge.plugin"
