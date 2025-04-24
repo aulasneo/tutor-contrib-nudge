@@ -48,10 +48,11 @@ setup(
     author_email="andres@aulasneo.com",
     description="nudge plugin for Tutor",
     long_description=load_readme(),
+    long_description_content_type="text/x-rst",
     packages=find_packages(exclude=["tests*"]),
     include_package_data=True,
     python_requires=">=3.7",
-    install_requires=["tutor >= 18.0.0, < 19.0.0"],
+    install_requires=["tutor >= 19.0.0, < 20.0.0"],
     entry_points={
         "tutor.plugin.v1": [
             "nudge = tutornudge.plugin"

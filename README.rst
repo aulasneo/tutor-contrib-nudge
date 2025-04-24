@@ -13,7 +13,7 @@ Installation
 
 ::
 
-    pip install git+https://github.com/aulasneo/tutor-contrib-nudge
+    pip install tutor-contrib-nudge
 
 Configuration
 -------------
